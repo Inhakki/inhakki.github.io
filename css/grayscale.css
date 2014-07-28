@@ -250,7 +250,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/pokemonlivefaded.jpg) no-repeat center center scroll;
+    background: url(../img/pokemonlive.png) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -269,6 +269,15 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.text-box {
+    background-color: rgba(20, 20, 20, .65);
+    border-radius: 30px;
+}
+
+.text-configure {
+    padding: 30px;
 }
 
 #map {
