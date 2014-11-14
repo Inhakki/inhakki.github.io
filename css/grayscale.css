@@ -276,7 +276,20 @@ a:focus {
     margin: 30px 0;
     padding: 70px 0;
     color: #fff;
-    background: url(../img/supatravel.png) no-repeat center center scroll;
+    background: url(../img/usps-holiday.png) no-repeat top center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.download-section4 {
+    width: 100%;
+    margin: 30px 0;
+    padding: 70px 0;
+    color: #fff;
+    background: url(../img/verizon-etr.png) no-repeat center top scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
