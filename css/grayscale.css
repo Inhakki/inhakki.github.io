@@ -250,7 +250,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/pokemonlive.png) no-repeat center center scroll;
+    background: url(../img/fantprod.png) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -290,6 +290,19 @@ a:focus {
     padding: 70px 0;
     color: #fff;
     background: url(../img/verizon-etr.png) no-repeat center top scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.download-section5 {
+    width: 100%;
+    margin: 30px 0;
+    padding: 70px 0;
+    color: #fff;
+    background: url(../img/spookyparty.png) no-repeat center top scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -400,4 +413,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.under-construction {
+    color: red;
 }
