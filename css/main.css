@@ -1,25 +1,33 @@
-// Variables
-
-@primary: #28c3ab;
-@dark: #000;
-@light: #fff;
-
-// LESS
-
 body {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: @light;
-    background-color: @dark;
+    font-family: Raleway, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+}
+
+.page-wrapper:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.6;
+    background: url('../img/lightpaperfibers.png') repeat;
+}
+
+.page-wrapper {
+    z-index: 2;
 }
 
 html {
     width: 100%;
     height: 100%;
 }
-
-// Typhography
 
 h1,
 h2,
@@ -29,15 +37,17 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+    text-shadow: 3px 4px 4px black;
 }
 
 p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
+    text-shadow: 2px 3px 3px black;
 }
 
 @media(min-width:767px) {
@@ -49,7 +59,7 @@ p {
 }
 
 a {
-    color: @primary;
+    color: #28c3ab;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -58,65 +68,39 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: darken(@primary, 20%);
+    color: #176e61;
 }
 
 .light {
     font-weight: 400;
 }
 
- // Navigation
-
- .navbar {
+.navbar {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: @dark;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow: 2px 3px 3px black;
 }
 
-.navbar-brand {
-    font-weight: 700;
-}
-
-.navbar-brand:focus {
-    outline: none;
-}
-
-.navbar-custom a {
-    color: @light;
-}
-
-.navbar-custom .nav li a {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li.active {
-    outline: none;
-    background-color: rgba(255,255,255,0.2);
-}
 
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: @light;
+    color: #fff;
 }
 
 .navbar-toggle:focus,
 .navbar-toggle:active {
-    outline: none;
+    outline: 0;
 }
 
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
-        border-bottom: none;
+        border-bottom: 0;
         letter-spacing: 1px;
-        background: transparent;
+        background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -124,25 +108,23 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: @dark;
+        background-color: #000;
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(255,255,255,.3);
     }
 }
 
- // Full Page Image Intro Section
-
- .intro {
+.intro {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 10 0px 0;
     text-align: center;
-    color: @light;
+    color: #fff;
     background: url(../img/lookawayfaded.jpg) no-repeat bottom center scroll;
-    background-color: @dark;
+    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -155,7 +137,8 @@ a:focus {
 }
 
 .brand-heading {
-    font-size: 40px;
+    margin-top: 400px;
+    font-size: 30px;
 }
 
 .intro-text {
@@ -182,11 +165,11 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid @light;
+    border: 2px solid #fff;
     border-radius: 35px;
     font-size: 40px;
-    color: @light;
-    background: transparent;
+    color: #fff;
+    background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -194,9 +177,9 @@ a:focus {
 
 .btn-circle:hover,
 .btn-circle:focus {
-    outline: none;
-    color: @light;
-    background: rgba(255,255,255,0.1);
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
 }
 
 .page-scroll .btn-circle i.animated {
@@ -251,22 +234,15 @@ a:focus {
     }
 }
 
- // Content Sections
-
- .content-section {
-    padding-top: 100px;
+.content-section {
+    padding-top: 70px;
+    padding-bottom: 30px;
 }
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: @light;
-    background: url(../img/pokemonlivebw.jpg) no-repeat center center scroll;
-    background-color: @dark;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+
+
+.text-configure {
+    padding: 30px;
 }
 
 #map {
@@ -277,7 +253,8 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
+        padding-bottom: 150px;
     }
 
     .download-section {
@@ -290,11 +267,9 @@ a:focus {
     }
 }
 
- // Buttons
-
- .btn {
+.btn {
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -302,17 +277,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid @primary;
-    color: @primary;
+    border: 1px solid #28c3ab;
+    color: #28c3ab;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid @primary;
-    outline: none;
-    color: @dark;
-    background-color: @primary;
+    border: 1px solid #28c3ab;
+    outline: 0;
+    color: #000;
+    background-color: #28c3ab;
 }
 
 .btn-huge {
@@ -331,39 +306,41 @@ a:focus {
 }
 
 @media(max-width:767px) {
-    ul.banner-social-buttons > li {
+    ul.banner-social-buttons>li {
         display: block;
         margin-bottom: 20px;
         padding: 0;
     }
 
-    ul.banner-social-buttons > li:last-child {
+    ul.banner-social-buttons>li:last-child {
         margin-bottom: 0;
     }
 }
 
- // Highlight Color Customization
-
 ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,.2);
 }
 
 ::selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,.2);
 }
 
 img::selection {
-    background: transparent;
+    background: 0 0;
 }
 
 img::-moz-selection {
-    background: transparent;
+    background: 0 0;
 }
 
 body {
-    webkit-tap-highlight-color: rgba(255,255,255,0.2);
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.under-construction {
+    color: red;
 }
