@@ -1,0 +1,54 @@
+body {
+  background: url(../img/brickwall.png) repeat top center scroll;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #999;
+  font-size: 20px;
+}
+
+#profile {
+  margin: 50px auto;
+  text-align: center;
+
+  #name {
+    margin: 40px auto;
+    font-size: 80px;
+    background-color: transparent;
+    width: 50%;
+    color: #CFCFD6;
+    letter-spacing: .15em;
+    text-shadow:
+    1.5px -6px 0px #E9E9F0,
+    1px -4px 0px #E9E9F0,
+    0.5px -2px 0px #E9E9F0,
+    0px -0px 0px #E9E9F0,
+    -0.5px 2px 1px #788F9E,
+    -1px 4px 1px #788F9E,
+    -1.5px 6px 1px #788F9E,
+    -2px 8px 1px #788F9E,
+    -2.5px 10px 1px #788F9E,
+    -3px 12px 1px #788F9E,
+    -3.5px 14px 1px #788F9E,
+    -4px 16px 1px #788F9E,
+    -4.5px 18px 1px #788F9E,
+    -5px 20px 1px #788F9E,
+    //-5.5px 22px 1px #788F9E,
+    //-6px 24px 1px #788F9E,
+    //-6.5px 26px 1px #788F9E,
+    //-14px 28px 1px #788F9E,
+    //-15px 30px 1px #788F9E,
+    //-16px 32px 1px #788F9E,
+    //-17px 34px 1px #788F9E,
+    //-18px 36px 1px #788F9E,
+    //-19px 38px 1px #788F9E,
+    //-20px 40px 1px #788F9E,
+  }
+
+  #profile-image {
+    border: 3px solid black;
+    //box-shadow: 0px 6px 10px #888;
+
+    text-shadow: 6px 6px 10px #788F9E;
+  }
+}
+
+
